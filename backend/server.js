@@ -49,7 +49,7 @@ app.use('/uploads', (req, res, next) => {
 }, express.static(path.join(__dirname, 'uploads')));
 
 // Routes Mount
-app.use('/auth', authRoutes);
+app.use('/api/auth', authRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/skills', skillRoutes);
 app.use('/api/techstack', techStackRoutes);
