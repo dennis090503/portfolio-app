@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "6a4a4c191410e4129d1b9281",
+    "category": "Programming",
+    "items": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C++"
+    ],
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.038Z",
+    "updatedAt": "2026-07-05T12:20:41.038Z"
+  },
+  {
+    "_id": "6a4a4c191410e4129d1b9282",
+    "category": "Frontend",
+    "items": [
+      "React",
+      "HTML",
+      "CSS"
+    ],
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.038Z",
+    "updatedAt": "2026-07-05T12:20:41.038Z"
+  },
+  {
+    "_id": "6a4a4c191410e4129d1b9283",
+    "category": "Backend",
+    "items": [
+      "Node.js",
+      "Express",
+      "Django"
+    ],
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.038Z",
+    "updatedAt": "2026-07-05T12:20:41.038Z"
+  },
+  {
+    "_id": "6a4a4c191410e4129d1b9284",
+    "category": "Database",
+    "items": [
+      "MongoDB",
+      "PostgreSQL"
+    ],
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.038Z",
+    "updatedAt": "2026-07-05T12:20:41.038Z"
+  },
+  {
+    "_id": "6a4a4c191410e4129d1b9285",
+    "category": "Tools",
+    "items": [
+      "Git",
+      "GitHub",
+      "VS Code"
+    ],
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.038Z",
+    "updatedAt": "2026-07-05T12:20:41.038Z"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "6a4a4c191410e4129d1b9292",
+    "company": "Topnotch Solution",
+    "role": "Python Intern",
+    "period": "Internship",
+    "points": [
+      "Built and maintained web scraping pipelines for structured data extraction",
+      "Automated repetitive workflows to improve operational efficiency",
+      "Worked with dynamic, JavaScript-heavy websites requiring custom scraping logic"
+    ],
+    "order": 1,
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.052Z",
+    "updatedAt": "2026-07-05T12:20:41.052Z"
+  },
+  {
+    "_id": "6a4a4c191410e4129d1b9293",
+    "company": "XByte",
+    "role": "Junior Python Developer",
+    "period": "Full-time",
+    "points": [
+      "Developed ETL pipelines moving data from raw sources into clean, usable formats",
+      "Built and consumed REST APIs for internal tooling",
+      "Implemented robust error handling for high-volume automation jobs"
+    ],
+    "order": 2,
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.052Z",
+    "updatedAt": "2026-07-05T12:20:41.052Z"
+  }
+]

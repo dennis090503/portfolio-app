@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 1. Define Design Tokens as CSS Variables */
+:root {
+  --background: 250 250 248; /* #FAFAF8 */
+  --surface: 255 255 255;    /* #FFFFFF */
+  --ink: 10 10 10;           /* #0A0A0A */
+  --primary: 10 10 10;       /* #0A0A0A */
+  --accent: 37 99 235;       /* #2563EB */
+  --text-default: 10 10 10;  /* #0A0A0A */
+  --text-muted: 107 107 104; /* #6B6B68 */
+  --line: 229 228 224;       /* #E5E4E0 */
+}
+
+/* 2. Seamless Dark Mode Overrides */
+.dark {
+  --background: 5 5 7;       /* #050507 */
+  --surface: 15 15 20;       /* Deep dark surface card background */
+  --ink: 245 245 247;        /* #F5F5F7 */
+  --primary: 245 245 247;    /* #F5F5F7 */
+  --accent: 0 240 255;       /* Cyberpunk Neon Cyan #00F0FF */
+  --text-default: 245 245 247;
+  --text-muted: 148 163 184; /* Sleek slate mute text */
+  --line: 31 31 46;          /* Dark subtle borders */
+}
+
+* {
+  scroll-behavior: auto;
+}
+
+html, body, #root {
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Base resets bound to variables */
+@layer base {
+  body {
+    background-color: rgb(var(--background));
+    color: rgb(var(--text-default));
+    @apply transition-colors duration-500 ease-in-out;
+  }
+}
+
+/* Scrollbar styling adapting dynamically */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--primary));
+  border-radius: 4px;
+}
+
+/* Utilities */
+.pill {
+  border-radius: 9999px;
+}
+
+.card-surface {
+  background: rgb(var(--surface));
+  border: 1px solid rgb(var(--line));
+  @apply transition-colors duration-500;
+}
+
+/* Cyberpunk Engine gradient mapping */
+.dark .text-gradient {
+  background: linear-gradient(135deg, #00F0FF 0%, #FF007A 50%, #FFB800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== GLOBAL BLUE CURSOR (Same as "About Me" text) ===== */
+/* Blue cursor matching #2563EB - the accent color used in "About Me" */
+* {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="8" fill="none" stroke="%232563EB" stroke-width="2"/><circle cx="16" cy="16" r="2.5" fill="%232563EB"/></svg>') 16 16, auto;
+}
+
+/* Interactive elements (buttons, links) - slightly larger */
+a, button, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" fill="none" stroke="%232563EB" stroke-width="2.5"/><circle cx="16" cy="16" r="3.5" fill="%232563EB"/></svg>') 16 16, pointer;
+}
+
+/* Text inputs keep text cursor with blue accent */
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="8" fill="none" stroke="%232563EB" stroke-width="2"/><circle cx="16" cy="16" r="2.5" fill="%232563EB"/></svg>') 16 16, text;
+}
+
+/* Disabled elements get default cursor */
+[disabled] {
+  cursor: not-allowed !important;
+}

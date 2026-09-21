@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "6a4a4c191410e4129d1b929b",
+    "title": "Data Structures & Algorithms",
+    "issuer": "Course / Institute",
+    "url": "",
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.068Z",
+    "updatedAt": "2026-07-05T12:20:41.068Z"
+  },
+  {
+    "_id": "6a4a4c191410e4129d1b929c",
+    "title": "Problem Solving",
+    "issuer": "HackerRank",
+    "url": "",
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.069Z",
+    "updatedAt": "2026-07-05T12:20:41.069Z"
+  },
+  {
+    "_id": "6a4a4c191410e4129d1b929d",
+    "title": "Python Programming",
+    "issuer": "Python Institute",
+    "url": "",
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.069Z",
+    "updatedAt": "2026-07-05T12:20:41.069Z"
+  },
+  {
+    "_id": "6a4a4c191410e4129d1b929e",
+    "title": "Machine Learning",
+    "issuer": "Stanford Online / Coursera",
+    "url": "",
+    "__v": 0,
+    "createdAt": "2026-07-05T12:20:41.069Z",
+    "updatedAt": "2026-07-05T12:20:41.069Z"
+  }
+]
