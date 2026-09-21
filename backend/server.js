@@ -67,7 +67,7 @@ app.get('/api/health', (req, res) => {
     siteName: req.siteConfig?.identity?.name || 'Dennis Portfolio'
   });
 });
-app.get('/get_health', (req, res) => {
+app.get('/api/get_health', (req, res) => {
   res.status(200).json({ status: 'OK', timestamp: new Date() });
 });
 // Database Connection & Auto-Seeding
